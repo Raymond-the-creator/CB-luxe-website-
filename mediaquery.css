@@ -1,0 +1,286 @@
+@media (min-width:720px) {
+  header{
+    height:100px;
+  }
+  .left-side{
+  flex: 0 0 200px;
+  vertical-align:middle;
+}
+.middle-side{
+  min-width:400px;
+  vertical-align:middle;}
+  
+  .right-side{
+    min-height:60px;
+    min-width: 200px;
+    vertical-align:middle;
+    opacity:1;
+  }
+  
+.company-name{
+  font-size:40px;
+}
+.company-motto{
+  font-size:20px;
+}
+.navicons {
+  min-height: 35px;
+  min-width: 35px;
+}
+.herobody{
+  flex-direction:row;
+  flex-wrap:wrap;
+}
+.hero-image{
+  flex:0 0 300px;
+  height: 300px;
+}
+.hero-info{
+  flex:0 0 300px;
+  height: 300px;
+  min-width: 380px;
+}
+.introline1,
+.introline2{
+  font-size:20px;
+  text-align: center;
+  letter-spacing:7.5px;
+  line-height: 2.5px;
+  gap:30px;
+}
+.hero-buttons{
+  height:100px;
+}
+.designbutton,
+.appointmentbutton{
+  font-size:19px;
+  height:65px;
+  width:250px
+}
+.marketingmotto{
+  padding:47px;
+  p{
+    font-size:35px;
+  }
+  
+}
+.ring-card{
+  width:180px;
+  height:280px;
+  p{
+    font-size:17.5px;
+  }
+}
+.ring-card img{
+  width:120px;
+  height:120px;
+}
+.offers-content{
+  flex:0 0 100px;
+}
+.offers{
+  flex:0 0 180px;
+}
+.svgs{
+  height:120px;
+  width:120px;
+}
+.offers-text{
+  font-size:30px;
+  height:100px;
+  width:400px;
+} 
+.learn-more{
+  font-size: 18.5px;
+  bottom:5px;
+}
+article p{
+  font-size:27px;
+}
+article button{
+  font-size:18px;
+  min-height:60px;
+  min-width:80px;
+}
+.services-img{
+max-height:500px;
+}
+.services-descrption{
+  h1{
+    font-size:45px;
+  }
+  h3{
+    font-size:34px;
+  }
+  p{font-size:25px;}
+  button{font-size:25px;
+    min-height:65px ;
+    min-width:400px;
+  }
+}
+#biography{
+  min-height:600px;
+}
+.Prices h3,p{font-size:19px}
+footer{
+  min-height:500px;}
+  
+  .closing-remarks {
+    a, p{
+    font-size:28px;
+  }
+}
+
+}
+
+@media (min-width:1024px) {
+  header{
+    height:200px;
+  }
+  .left-side{
+  flex: 0 0 500px;
+  min-height:150px;
+  vertical-align:middle;
+}
+.middle-side{
+  min-height:150px;
+  min-width:950px;
+  vertical-align:middle;}
+  
+  .right-side{
+   min-height:150px;
+   min-width:300px;
+    vertical-align:middle;
+    opacity:1;
+  }
+  
+.company-name{
+  font-size:80px;
+}
+.company-motto{
+  font-size:40px;
+}
+.navicons {
+  min-height: 75px;
+  min-width: 75px;
+}
+.searchbar{
+  opacity:0;}
+.herobody{
+  flex-direction:row;
+  flex-wrap:wrap;
+}
+.hero-image{
+  flex:0 0 700px;
+  height:600px;
+}
+
+.hero-info{
+  flex:0 0 680px;
+  height: 600px;
+  min-width: 380px;
+}
+.introline1,
+.introline2{
+  font-size:40px;
+  text-align: center;
+  letter-spacing:13px;
+  line-height:1.9;
+}
+.hero-buttons{
+  height:150px;
+}
+.designbutton,
+.appointmentbutton{
+  font-size:35px;
+  height:100px;
+  width:500px;
+}
+.marketingmotto{
+  padding:60px;
+  p{
+    font-size:50px
+  }
+}
+.ring-card{
+  flex:0 0 250px;
+  height:320px;
+  p{
+    font-size:23.5px;
+  }
+}
+.ring-card img{
+  width:170px;
+  height:170px;
+}
+.offers-content{
+  flex:0 0 200px;
+}
+.offers{
+  flex:0 0 200px;
+}
+.svgs{
+  height:180px;
+  width:180px;
+}
+.offers-text{
+  font-size:55px;
+  height:180px;
+  width:700px;
+} 
+.learn-more{
+  font-size: 35px;
+  bottom:30px;
+}
+article p{
+  font-size:40px;
+  text-transform: uppercase;
+}
+article button{
+  font-size:40px;
+  min-height:100px;
+  width:500px;
+}
+.column-box{
+  
+}
+.services-img{
+  border: 2px solid red;
+  min-height:400px;
+  max-height:600px;
+}
+.services-descrption{
+  border: 2px solid blue;
+  h1{
+    font-size:60px;
+  }
+  h3{
+    font-size:45px;
+  }
+  p{font-size:35px;}
+  button{
+    font-size:35px;
+    min-height:100px ;
+    min-width:500px;
+  }
+}
+#biography{
+  height:650px;
+}
+#ring-taste{
+  height:260px;
+}
+.Prices {
+  height:100px;
+  h3,p{font-size:35px}}
+footer{
+  height:900px;}
+  
+  .closing-remarks {
+    a, p{
+    font-size:50px;
+  }
+}
+
+}
+

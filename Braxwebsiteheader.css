@@ -1,0 +1,498 @@
+:root {
+  --gold: #B8964E;
+  --ivory: #FAF7F2;
+  --champagne: #E8DCC6;
+}
+
+*{margin:0;
+  padding:0;
+  box-sizing:border-box;
+  user-select:none;
+}
+body{
+  background:  var(--ivory);
+  display:flex;
+  flex-direction:column;
+}
+header{
+  background:#FDFCFA;
+  border-bottom:4px solid var(--gold);
+  margin-bottom:10px;
+  height:80px;
+  max-width: 100%;
+  position:sticky;
+  top:0;
+  z-index:10;
+  display:flex;
+  justify-content:space-between;
+align-items: center;
+}
+.left-side{
+  flex: 0 0 100px;
+  align-content: center;
+  display:inline-block;
+  padding:10px 0;
+  margin: 20px 15px;
+  vertical-align:top;
+}
+
+.middle-side{
+  text-align: center;
+  flex: 0 0 300px;
+  min-width: 200px;
+  display:inline-block;
+  margin: 20px 0;
+}
+
+.company-name{ 
+  color:var(--gold);
+  font-size: 32px;
+  font-weight:700;
+  font-family: 'Playfair Display',serif  ;
+  text-transform:uppercase;
+  line-height:1.1;
+  letter-spacing:1 ;
+}
+.company-motto {
+  color:#8A6F3D;
+  height:20px;
+  font-family: 'Inter', sans-seri;
+  font-size:10px;
+  font-weight:400;
+  letter-spacing:2;
+  text-transform:uppercase;
+}
+.right-side {
+  border: 3px solid blue;
+  display:inline-block;
+  flex: 0 0 50px;
+  opacity:0;
+  
+}
+.navicons { width: 30px;
+           height: 30px;
+}
+.info {
+  opacity:0;
+}
+.info:hover{
+  opacity:1;
+}
+.searchbar { border:4px solid var(--gold) ;
+             height:50px;
+             margin-bottom:20px;
+             border-radius: 15px;
+           }
+
+#searchbar { 
+  border:none;
+  border-radius: 15px;
+   background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='%23999' viewBox='0 0 24 24'%3E%3Cpath d='M10 2a8 8 0 0 1 6.32 12.9l5.39 5.4-1.42 1.42-5.38-5.38A8 8 0 1 1 10 2zm0 2a6 6 0 1 0 0 12 6 6 0 0 0 0-12z'/%3E%3C/svg%3E") no-repeat 12px center;
+   background-size: 20px;
+  height:100%;
+  min-width:100%;
+  text-align: center;
+  font-weight: 800;
+  font-family: 'Playfair Display',serif  ;
+  text-transform:uppercase;
+  position: sticky;
+}
+#searchbar::placeholder{
+  color:var(--gold);
+}
+
+main{
+   max-height: 1200px;
+   width: 100%;
+   margin-bottom:5px;
+}
+.herobody{
+   display:flex;
+   flex-direction:column;
+   gap:10px;
+}
+.hero-image{
+ border: none;
+  height: 450px;
+  width: 100%;
+  
+  img{
+  height:100%;
+  width:100%;
+  }
+}
+#heropic /**hero image**/{
+  
+  
+}
+.hero-info{
+  border:5px solid var(--champagne);
+  border-radius:15px;
+  height:200px;
+  width:100%;
+  position:relative;
+ }
+
+.intro{
+         background: var(--champagne) ;
+         color: var(--gold);
+        border-radius: 15px 30%;
+         height:100%;
+         width:100%;
+         text-align: center;
+         padding-top:50px;
+       }
+       
+.introline1:hover,
+.introline2:hover{
+  border-bottom:3px solid var(--gold);
+}
+.introline1,
+.introline2 {
+  font-family :'Coromorant Garamond ', sans-serif;
+  font-weight:900;
+  font-size:15px;
+  letter-spacing:2px;
+  line-height: 2;
+  white-space: pre-line;
+}
+.hero-buttons{
+  border: 2px solid black;
+  height:80px;
+background: var(--ivory);
+width:100%;
+display:flex;
+gap:8rem;
+justify-content: center;
+align-items: flex-start;
+border: none;
+border-top: 1px solid var(--gold);
+padding-top:10px;
+}
+.designbutton,
+.appointmentbutton {
+  border: 5px solid var(--champagne);
+  color: var(--gold);
+  background: #FAF7F2;
+  font-family: 'Playfair Display', sans-serif  ;
+  font-weight:bold;
+  border-radius: 14px;
+  height:59px;
+  padding:10px;
+  cursor: pointer;
+                   }
+
+.designbutton:hover,
+.appointmentbutton:hover {
+  background:  var(--champagne);
+  transition:ease-in-out 0.1s;
+}
+
+.designbutton:active,
+.appointmentbutton:active{
+  
+}
+
+.ads{min-height: 250px;
+      min-width: 100%;
+    }
+.ads img {
+  height:100%;
+  width:100%;
+ }
+.marketing-section {
+  background: var(--ivory);
+  color: var(--gold);
+  border-bottom: 5px solid  var(--gold);;
+  min-height: 620px;
+  min-width: 100%;
+  text-align: center;
+  }
+
+.marketingmotto { 
+  padding: 40px;
+  border-bottom:4px dotted  var(--gold);
+  margin-bottom: 20px;
+  p{
+    font-size:20px ;
+  font-family: 'Playfair Display', serif  ;
+  font-weight: bolder;
+  }
+ }
+
+.marketingmotto:hover{
+  text-decoration: underline;}
+
+.ring-scroller {
+  display: flex;
+  gap: 8px;
+  padding: 10px;
+  overflow-x: scroll;        /* Allow horizontal scroll */
+  overflow-y: hidden;
+  scroll-behavior:smooth ;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch; /*IOS smooth scroll*/
+  cursor: grab; 
+  user-select: none;
+  transition-duration: 0.1s;
+  margin-bottom: 30px;
+}
+
+.ring-card {
+  flex: 0 0 80px; /* Fixed width so it forces overflow */
+  width:125px;
+  height: 150px;
+  scroll-snap-align: center; 
+  background: #fff;
+  border-radius: 10px;
+  border: 2px solid  var(--gold);
+  padding: 18px;
+  transition: 0.2s ease-in-out;
+  p{
+    font-size:9px;
+    font-weight:500;
+    font-family: 'Cormorant Garamond', serif  
+    line-height:1.1 ;
+    letter-spacing:1.3px ;
+  }
+}
+
+.ring-card:hover {
+  transform: translateY(-10px);
+}
+
+.ring-card img {
+  border:2px solid var(--champagne);
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  border-radius: 8px;
+  pointer-events: none; /* Only block drag on images, not the whole card */
+}
+.paymentoffer-section,
+.guarantee-offers { 
+  color:white;
+  background:black;
+  display:flex;
+  flex-direction: column;
+  min-height:500px;
+  min-width: 100%;
+  }
+article{
+  margin:40px 0;
+  padding:20px;
+  display:flex;
+  flex-direction:column ;
+  gap:20px;
+align-items:center ;
+  min-height:120px;
+
+p{
+  color: var(--champagne);
+  font-family :'Coromorant Garamond ', sans-serif;
+  font-weight:400;
+  font-size:15px;
+  letter-spacing:1.2;
+  line-height: 2;
+}
+button{
+  color: var(--champagne);
+  background:black;
+  border:2px solid white;
+  border-radius:15px;
+  text-transform:uppercase ;
+  min-height:40px ;
+  min-width:60px;
+  padding:20px;
+}
+button:hover{
+  background: var(--gold);
+  box-shadow:5px 5px 1px var(--ivory );
+  transition:0.2s ease-in-out ;
+}
+}
+.offers { 
+  border-bottom: 2px solid  var(--gold);
+          flex: 0 0 100px;
+          align-content:center;
+        }
+.offers-text {
+  position: relative;
+  color: var(--champagne);
+  font-weight:900;
+  font-size:20px;
+  font-family: 'Playfair Display',serif  ;
+  letter-spacing:1.5 ;
+  height:68px;
+  width:250px;
+  align-content: center;
+}
+.learn-more{
+  color: var(--ivory);
+  position: absolute;
+  left:0;
+  bottom:-5px;
+  font-size:12px;
+  height:20px;
+  width:auto;
+  transition: 0.2s ease-in-out;
+}
+.learn-more:active{
+  color: var(--gold);
+}
+.offer-text:hover{
+  color: red;
+  text-decoration: underline;
+}
+.offers-content {
+  display: flex;
+  justify-content:center ;
+  align-content:center ;
+  flex: 0 0 100px;
+column-gap:10px;
+  flex-wrap:wrap;
+         }
+.svgs { 
+  min-height:80px;
+  height:100%;
+  width:80px;
+      }
+.company-services{
+  color: var(--gold);
+  border: 2px solid ;
+ background: var(--gold);
+ display:flex;
+ flex-direction: column;
+ height: auto;
+ min-width: 100% ; 
+}
+.column-box{
+  border: none ;
+  display:flex;
+flex-direction: column;
+  height: auto ;
+}
+.services-img{
+  border:  none
+  min-height:200px;
+  max-height:400px;
+  
+}
+
+.services-img  img{
+  height:100%;
+  width:100%;
+}
+.services-descrption{
+  background: var(--ivory);
+  border: ;
+  text-align: center ;
+  min-height:300px ;
+  width:100%;
+}
+.services-descrption  h1{
+  font-size:35px;
+  font-family:'Playfair Display',serif;
+  line-height: 1.1;
+  letter-spacing: 1.5;
+  padding-bottom:10px;
+}
+.services-descrption h3 {
+  font-size: 28px;
+  font-family: 'Dancing Script', cursive;
+  line-height: 1.1;
+  letter-spacing: 1.5;
+  padding-bottom: 10px;
+}
+.services-descrption  p{
+  font-size:15px;
+  font-family:'Times  New Roman',monospace;
+  line-height: 1.4;
+  letter-spacing: 1;
+}
+.services-descrption button{
+  color: var(--gold);
+  border: 5px solid var(--gold);
+  background: var(--ivory);
+  font-family: 'Playfair Display', serif  ;
+  font-weight:bold;
+  letter-spacing:2px;
+  border-radius: 5px;
+  min-height:59px;
+  min-width:300px;
+  padding:10px;
+  margin-bottom:10px;
+  cursor: pointer;
+  transition:0.2s ease-in-out
+}
+.services-descrption button:hover{
+  background: var(--champagne);
+box-shadow:5px 5px 1px var(--gold);
+  transform: scale(0.96);
+  }
+  .services-descrption button:active{
+  
+}
+#biography{
+  min-height:450px;
+  padding-top:18px;
+}
+#ring-taste{
+  height:200px;
+  padding-top:18px;
+}
+.priceranges {
+  display: flex;
+  flex-direction:row;
+  flex-wrap:wrap ;
+  border: 2px solid  var(--gold);
+  color: var(--gold);
+  text-align: center;
+}
+
+.Prices {
+  border: 2px solid  var(--gold);
+  background: linear-gradient(#E8DCC6, #FAF7F2);
+  justify-content: center;
+  height: 70px;
+  flex: 1 0 100px;
+  
+  h3{
+    font-size: 18px;
+  font-family: 'Dancing Script', cursive;
+  line-height: 1.4;
+  letter-spacing: 2;
+  }
+  p{
+    font-size: 18px;
+    font-family: 'Dancing Script', cursive;
+  line-height: 1.4;
+  letter-spacing: 2;
+  }
+ }
+
+footer {
+  color: var(--champagne);
+  background:black;
+  min-height:250px;
+  width:100%;
+  bottom:0;
+  align-items:center ;
+  padding:30px 0 ;
+}
+.closing-remarks{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+  text-align:center ;
+  min-height:100%;
+  min-width:100%;
+a,p{
+  font-size:15px;
+  font-weight:600;
+  font-family:'Playfair Display',sans-serif;
+  text-transform:uppercase;
+  line-height:2;
+}
+a:active{color: var(--gold);}
+}
